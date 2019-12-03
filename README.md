@@ -1,24 +1,22 @@
-[![Download](https://api.bintray.com/packages/bincrafters/public-conan/pthread-win32%3Abincrafters/images/download.svg) ](https://bintray.com/bincrafters/public-conan/pthread-win32%3Abincrafters/_latestVersion)
-[![Build status](https://ci.appveyor.com/api/projects/status/github/bincrafters/conan-pthread-win32?branch=testing%2F2.9.1&svg=true)](https://ci.appveyor.com/project/bincrafters/conan-pthread-win32)
 
 [Conan.io](https://conan.io) package recipe for [*pthread-win32*](http://www.sourceware.org/pthreads-win32/).
 
 Keep it short
 
-The packages generated with this **conanfile** can be found on [Bintray](https://bintray.com/bincrafters/public-conan/pthread-win32%3Abincrafters).
+The packages generated with this **conanfile** can be found on [CAMPOSS](https://conan.campar.in.tum.de/api/conan/conan-camposs).
 
 ## For Users: Use this package
 
 ### Basic setup
 
-    $ conan install pthread-win32/2.9.1@bincrafters/testing
+    $ conan install pthread-win32/2.9.1@camposs/stable
 
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
 
     [requires]
-    pthread-win32/2.9.1@bincrafters/testing
+    pthread-win32/2.9.1@camposs/stable
 
 
 Complete the installation of requirements for your project running:
@@ -35,7 +33,7 @@ The example below shows the commands used to publish to bincrafters conan reposi
 
 The following command both runs all the steps of the conan file, and publishes the package to the local system cache.  This includes downloading dependencies from "build_requires" and "requires" , and then running the build() method.
 
-    $ conan create bincrafters/testing
+    $ conan create camposs/stable
 
 
 ### Available Options
@@ -45,11 +43,11 @@ The following command both runs all the steps of the conan file, and publishes t
 
 ## Add Remote
 
-    $ conan remote add bincrafters "https://api.bintray.com/conan/bincrafters/public-conan"
+    $ conan remote add camposs "https://conan.campar.in.tum.de/api/conan/conan-camposs"
 
 ## Upload
 
-    $ conan upload pthread-win32/2.9.1@bincrafters/testing --all -r bincrafters
+    $ conan upload pthread-win32/2.9.1@camposs/stable --all -r camposs
 
 
 ## Conan Recipe License

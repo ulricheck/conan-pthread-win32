@@ -6,7 +6,7 @@ class PthreadWin32Conan(ConanFile):
     name = "pthread-win32"
     version = "2.9.1"
     description = "Keep it short"
-    url = "https://github.com/bincrafters/conan-pthread-win32"
+    url = "https://github.com/ulricheck/conan-pthread-win32"
     homepage = "http://www.sourceware.org/pthreads-win32/"
     license = "GNU LGPL"
     exports = ["LICENSE.md"]
